@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+.menu a {
+    color: orange;
+}
+
+.menu a:hover {
+    color: darkorange;
+}
