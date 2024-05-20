@@ -1,32 +1,170 @@
+/* Basic body styling */
 body {
-    background-color: black;
-    color: white;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Default font family */
+    line-height: 1.6; /* Default line height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* General link styling */
 a {
-    color: orange;
+    color: orange; /* Set link color to orange */
+    text-decoration: underline; /* Underline links */
 }
 
 a:hover {
-    color: darkorange;
+    color: darkorange; /* Change link color on hover */
 }
 
+/* Menu link styling */
 .menu a {
-    color: orange;
+    color: orange; /* Set menu link color to orange */
 }
 
 .menu a:hover {
-    color: darkorange;
+    color: darkorange; /* Change menu link color on hover */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: white;
-}
-
+/* Site title styling */
 .site-title {
-    color: white;
+    color: white; /* Set site title color to white */
+    font-size: 2.4rem; /* Set site title font size */
+    text-align: center; /* Center align the site title */
+    margin-top: 1rem; /* Add top margin to the site title */
 }
 
+/* Subsection title styling */
 .subsection-title {
-    color: orange;
+    color: orange; /* Set subsection title color to orange */
+    font-size: 1.8rem; /* Set subsection title font size */
+    margin-top: 1.5rem; /* Add top margin to subsection titles */
+}
+
+/* Content styling */
+.content {
+    padding: 1rem; /* Add padding to content */
+}
+
+.content h1, .content h2, .content h3,
+.content h4, .content h5, .content h6 {
+    line-height: 1.5; /* Set line height for headings */
+    color: white; /* Set heading color to white */
+}
+
+.content h1 {
+    font-size: 2.4rem; /* Set h1 font size */
+}
+
+.content h2 {
+    font-size: 1.8rem; /* Set h2 font size */
+}
+
+.content h3 {
+    font-size: 1.4rem; /* Set h3 font size */
+}
+
+.content h4 {
+    font-size: 1.2rem; /* Set h4 font size */
+}
+
+.content h5 {
+    font-size: 1.1rem; /* Set h5 font size */
+}
+
+.content h6 {
+    font-size: 1rem; /* Set h6 font size */
+}
+
+.content p {
+    text-align: justify; /* Justify paragraph text */
+    margin-bottom: 1rem; /* Add bottom margin to paragraphs */
+}
+
+/* Styling for blockquotes */
+.content blockquote {
+    border-left: white 2px solid; /* Add white border to blockquotes */
+    font-style: italic; /* Italicize blockquote text */
+    padding: 1rem 0 1rem 2rem; /* Add padding to blockquotes */
+    margin-bottom: 1rem; /* Add bottom margin to blockquotes */
+}
+
+/* Code block styling */
+.content code {
+    background-color: #333; /* Set background color for inline code */
+    border-radius: .2rem; /* Add border radius to inline code */
+    color: orange; /* Set text color for inline code */
+    font-family: 'Courier New', Courier, monospace; /* Set font family for code */
+    padding: 0 .2rem; /* Add padding to inline code */
+}
+
+.content pre {
+    background-color: #333; /* Set background color for code blocks */
+    border-radius: .2rem; /* Add border radius to code blocks */
+    font-family: 'Courier New', Courier, monospace; /* Set font family for code */
+    margin-top: .5rem; /* Add top margin to code blocks */
+    overflow-x: auto; /* Allow horizontal scrolling for code blocks */
+    padding: .5rem; /* Add padding to code blocks */
+}
+
+/* Table styling */
+.content table {
+    display: block; /* Make tables block elements */
+    overflow-x: auto; /* Allow horizontal scrolling for tables */
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-bottom: 1rem; /* Add bottom margin to tables */
+}
+
+.content td, .content th {
+    border: 1px solid white; /* Set border color for table cells */
+    padding: .5rem; /* Add padding to table cells */
+}
+
+.content th {
+    background-color: #444; /* Set background color for table headers */
+    color: white; /* Set text color for table headers */
+}
+
+/* List styling */
+.content ol, .content ul {
+    margin-left: 1.5rem; /* Add left margin to lists */
+    margin-bottom: 1rem; /* Add bottom margin to lists */
+}
+
+/* Image styling */
+.content img {
+    max-width: 100%; /* Set max width for images */
+}
+
+/* Footnote styling */
+.content a.footnote-ref::before {
+    content: "["; /* Add opening bracket before footnote reference */
+}
+
+.content a.footnote-ref::after {
+    content: "]"; /* Add closing bracket after footnote reference */
+}
+
+/* Strong emphasis for Chinese text */
+.content strong.chinese {
+    font-weight: normal; /* Set normal font weight */
+    text-emphasis-style: dot; /* Add dot emphasis style */
+    text-emphasis-position: under; /* Set emphasis position to under */
+    -webkit-text-emphasis-style: dot; /* Add dot emphasis style for Webkit */
+    -webkit-text-emphasis-position: under; /* Set emphasis position to under for Webkit */
+}
+
+/* Styling for math content */
+.content .MathJax,
+.content .katex {
+    font-size: 100%!important; /* Set font size for math content */
+    overflow-x: auto; /* Allow horizontal scrolling for math content */
+    overflow-y: hidden; /* Hide vertical overflow for math content */
+}
+
+/* Remove bottom margin for last child elements */
+.content :last-child {
+    margin-bottom: 0; /* Remove bottom margin for last child elements */
 }
