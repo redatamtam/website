@@ -19,16 +19,16 @@ a:hover {
 }
 
 /* Menu link styling */
-.menu a {
+.menu a, .navbar a {
     color: orange; /* Set menu link color to orange */
 }
 
-.menu a:hover {
+.menu a:hover, .navbar a:hover {
     color: darkorange; /* Change menu link color on hover */
 }
 
 /* Site title styling */
-.site-title {
+.site-title, .navbar-brand {
     color: white; /* Set site title color to white */
     font-size: 2.4rem; /* Set site title font size */
     text-align: center; /* Center align the site title */
@@ -36,7 +36,7 @@ a:hover {
 }
 
 /* Subsection title styling */
-.subsection-title {
+.subsection-title, .section-title {
     color: orange; /* Set subsection title color to orange */
     font-size: 1.8rem; /* Set subsection title font size */
     margin-top: 1.5rem; /* Add top margin to subsection titles */
