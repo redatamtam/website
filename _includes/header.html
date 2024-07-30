@@ -1,0 +1,41 @@
+<div id="header">
+  <h1>
+    <!-- <span id="copy-title" class="copyable">{{site.title}}</span><span class="copy-hint">(Click to copy website's URL)</span> -->
+    <!-- <span id="copy-title" class="copyable">{{site.title}}<span class="copyable-icon"></span></span> -->
+    <script>
+      if (window.innerWidth >= 768) {
+        document.write('<span id="copy-title" class="copyable">{{site.title}}<span class="copyable-icon"></span></span>');
+      } else {
+        document.write('{{site.title}}');
+      }
+    </script>
+  </h1>
+
+  {% include google_analytics.html %}
+
+  <div class="menu_wrap"> <!-- ADD A WRAPPER -->
+      <ul class="nav">
+        {% for item in site.data.nav.items %}
+          <li><a href="{{ item.path | prepend:site.baseurl }}"
+            {% if page.url == item.path %}style="font-style: oblique;"{% endif %}
+            {% if item.path contains '.pdf' %}target="_blank"{% endif %}>
+              <span class="char1"> {{item.text}} </span>
+          </a></li>
+        {% endfor %}
+      </ul>
+
+      <span class="creditssmall pull-right social">
+      {% for sl in site.data.personal.social %}
+        {% unless sl[1] == '' %}
+          <a href="{{sl[1]}}" target="_blank"><i class="fa fa-{{sl[0]}}"></i></a>
+        {% endunless %}
+      {% endfor %}
+    </span>
+      <div class="clearFloat"></div> <!--  ADD CLEARFIX HERE -->
+  </div> 
+
+</div>
+
+
+
+
