@@ -12,28 +12,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <link rel="icon" type="image/x-icon"  href="{{ "/favicon.ico" | prepend:site.baseurl }}" />
+    <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend:site.baseurl }}" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!-- <style>
-          body {
-              background-image: url("./files/lightpaperfibers.webp");
-              background-repeat: repeat;
-          }
-      </style> -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8RE2099K1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8RE2099K1');
+    </script>
+    <!-- End Google Analytics -->
+
   </head>
 
   <body>
     <div class="wrapper">
         <section>
           {% include header.html %}
-
           {{ content }}
-
           <!-- {% include footer.html %} -->
         </section>
     </div>
-    </div>
+    
     <script src="{{ "/public/javascripts/jquery.min.js" | prepend:site.baseurl }}"></script>
     <script src="{{ "/public/javascripts/bootstrap.min.js" | prepend:site.baseurl }}"></script>
     {% include scripts.html %}
