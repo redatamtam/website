@@ -2,6 +2,8 @@
 // Buttons
 // --------------------------------------------------
 
+@import "mixins/buttons";  // Import mixins (including button-size)
+@import "mixins/variables";  // Ensure variables are available
 
 // Base styles
 // --------------------------------------------------
