@@ -1,0 +1,136 @@
+/* Subtle “premium” polish without fighting the theme */
+:root {
+  --content-max-width: 860px;
+}
+
+/* Center the page content */
+.wrapper,
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep a comfortable reading width */
+.container {
+  max-width: 900px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+
+/* Slightly more readable body rhythm */
+body {
+  line-height: 1.65;
+  letter-spacing: 0.1px;
+}
+
+/* Stronger headings */
+h1, h2, h3 {
+  letter-spacing: 0.2px;
+}
+
+/* Elegant link treatment */
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Make page sections feel more intentional */
+article, .content {
+  padding-top: 0.25rem;
+}
+
+/* Better list spacing (publications, talks, etc.) */
+.content ul li {
+  margin: 0.3rem 0;
+}
+
+/* Two-column “academic” home layout */
+.home-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+.home-sidebar {
+  width: 320px;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.home-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.home-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.home-info {
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+}
+
+.home-desc {
+  opacity: 0.85;
+  margin: 1rem 0 1.25rem 0;
+  line-height: 1.6;
+}
+
+.home-social {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.home-social-link {
+  text-decoration: none;
+}
+
+.home-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.home-nav-link {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.home-nav-link:hover {
+  opacity: 1;
+}
+
+.home-main {
+  flex: 1;
+  min-width: 0;
+  max-width: 820px; /* premium reading width */
+}
+
+/* Mobile: stack sidebar above content */
+@media (max-width: 900px) {
+  .home-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .home-sidebar {
+    width: 100%;
+    position: relative;
+    top: auto;
+  }
+  .home-main {
+    max-width: 100%;
+  }
+}
