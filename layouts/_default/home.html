@@ -1,0 +1,38 @@
+﻿{{ define "content" }}
+<div class="home-layout">
+  <aside class="home-sidebar">
+    {{ with .Site.Params.avatarURL }}
+      <img class="home-avatar" src="{{ . | relURL }}" alt="{{ $.Site.Params.author }}">
+    {{ end }}
+
+    <div class="home-name">{{ .Site.Params.author }}</div>
+    {{ with .Site.Params.info }}<div class="home-info">{{ . }}</div>{{ end }}
+
+    {{ with .Site.Params.description }}
+      <div class="home-desc">{{ . }}</div>
+    {{ end }}
+
+    {{ if .Site.Params.social }}
+      <div class="home-social">
+        {{ range sort .Site.Params.social "weight" }}
+          <a class="home-social-link" href="{{ .url }}" rel="me noopener" target="_blank" aria-label="{{ .name }}">
+            <i class="{{ .icon }}"></i>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ if .Site.Menus.main }}
+      <nav class="home-nav">
+        {{ range .Site.Menus.main }}
+          <a class="home-nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    {{ end }}
+  </aside>
+
+  <main class="home-main">
+    {{ .Content }}
+  </main>
+</div>
+{{ end }}
