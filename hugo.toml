@@ -2,6 +2,7 @@ baseURL = "https://www.redatamtam.com/"
 languageCode = "en"
 title = "Reda Tamtam"
 theme = "hugo-coder"
+googleAnalytics = "G-L8RE2099K1"
 
 [pagination]
   pagerSize = 20
