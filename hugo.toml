@@ -1,0 +1,30 @@
+baseURL = "https://www.redatamtam.com/"
+languageCode = "en"
+title = "Reda Tamtam"
+theme = "hugo-coder"
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  author = "Reda Tamtam"
+  info = "Political Science PhD"
+  description = "Research, writing, and projects"
+  keywords = "political science, authoritarianism, Libya, text as data"
+  avatarURL = "images/princeton.png"
+
+
+[[menu.main]]
+  name = "About"
+  url = "about/"
+  weight = 1
+
+[[menu.main]]
+  name = "Research"
+  url = "research/"
+  weight = 2
+
+[[menu.main]]
+  name = "Posts"
+  url = "posts/"
+  weight = 3
