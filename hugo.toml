@@ -12,7 +12,7 @@ googleAnalytics = "G-L8RE2099K1"
   info = "Political Science PhD"
   description = "Research, writing, and projects"
   keywords = "political science, authoritarianism, Libya, text as data"
-  avatarURL = "images/princeton.png"
+  favicon = "PU_mark.png"
 
 
 [[menu.main]]
@@ -29,3 +29,4 @@ googleAnalytics = "G-L8RE2099K1"
   name = "Posts"
   url = "posts/"
   weight = 3
+
