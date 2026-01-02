@@ -1,32 +1,221 @@
+############################
+# Core site configuration
+############################
 baseURL = "https://www.redatamtam.com/"
-languageCode = "en"
+languageCode = "en-us"
 title = "Reda Tamtam"
 theme = "hugo-coder"
-googleAnalytics = "G-L8RE2099K1"
 
+# Better SEO hygiene
+canonifyURLs = true
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
+
+# If you ever use GitHub-flavored Markdown in content
+enableEmoji = true
+
+# Prevent accidental drafts from deploying
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+############################
+# Pagination (Hugo >= 0.128)
+############################
 [pagination]
   pagerSize = 20
 
-[params]
-  author = "Reda Tamtam"
-  info = "Political Science PhD"
-  description = "Research, writing, and projects"
-  keywords = "political science, authoritarianism, Libya, text as data"
-  favicon = "PU_mark.png"
+############################
+# URL structure
+############################
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
+  research = "/research/:slug/"
+  teaching = "/teaching/:slug/"
+  talks = "/talks/:slug/"
 
+############################
+# Taxonomies (optional, but useful)
+############################
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+############################
+# Output formats (RSS + JSON optional)
+############################
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+############################
+# Markup configuration (clean academic writing)
+############################
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # allow raw HTML in Markdown (useful for embeds)
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+############################
+# Google Analytics (GA4)
+############################
+googleAnalytics = "G-L8RE2099K1"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+############################
+# Theme parameters (hugo-coder)
+############################
+[params]
+  ##########################
+  # Identity / header
+  ##########################
+  author = "Reda Tamtam"
+  info = "PhD Student in Political Science"
+  description = "Research on authoritarian politics, political economy, and historical legacies in North Africa and the Mediterranean."
+  keywords = "political science, comparative politics, authoritarianism, Libya, political economy, text as data"
+
+  # Avatar shown on homepage (place file in static/images/)
+  avatarURL = "images/avatar.jpg"
+
+  # Site icon (favicon) — place file in static/
+  favicon = "PU_mark.jpg"
+
+  ##########################
+  # Dark-first look & feel
+  ##########################
+  # Most hugo-coder installs support: "auto", "dark", "light"
+  colorScheme = "dark"
+  # Show the toggle in the UI (set true if you want to force dark only)
+  hideColorSchemeToggle = true
+
+  # Date formatting
+  dateFormat = "January 2, 2006"
+
+  # Home page layout controls
+  maxSeeAlsoItems = 6
+
+  # Footer polish
+  since = 2026
+  footerContent = "Academic website. Views are my own."
+
+  # Optional: hide theme credit line if you prefer (some academics keep it)
+  hideCredits = true
+  hideCopyright = true
+
+  ##########################
+  # Academic / content features
+  ##########################
+  # If you frequently write equations:
+  # Many hugo-coder setups use KaTeX with this flag.
+  # If it does not activate KaTeX for your install, I’ll give you the exact partial override.
+  math = true
+
+  # Enable reading time + word count if you like (theme-dependent)
+  # Some versions use these flags; harmless if ignored.
+  showReadingTime = true
+  showWordCount = true
+
+  # If you want a “Projects” or “Publications” section on the homepage,
+  # you typically implement as content sections; config here just keeps navigation clean.
+
+  ##########################
+  # Custom assets (for “expensive” look)
+  ##########################
+  # Add your own CSS overrides without forking the theme.
+  # Create: assets/css/custom.css  (or static/css/custom.css depending on approach)
+  # hugo-coder commonly supports customCSS.
+  customCSS = ["css/custom.css"]
+
+  # Optionally add custom JS (analytics events, counters, etc.)
+  customJS = ["js/custom.js"]
+
+
+############################
+# Menus (top navigation)
+############################
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
 
 [[menu.main]]
-  name = "About"
-  url = "about/"
-  weight = 1
+  name = "CV"
+  url = "files/CV_RedaTamtam.pdf"
+  weight = 2
+
 
 [[menu.main]]
   name = "Research"
   url = "research/"
-  weight = 2
+  weight = 3
+
+[[menu.main]]
+  name = "Publications"
+  url = "publications/"
+  weight = 4
+
+[[menu.main]]
+  name = "Data"
+  url = "data/"
+  weight = 5
 
 [[menu.main]]
   name = "Posts"
   url = "posts/"
-  weight = 3
+  weight = 6
 
+
+############################
+# Social links (icons)
+# hugo-coder uses fontawesome-style naming.
+############################
+[[params.social]]
+  name = "Email"
+  icon = "fa fa-envelope fa-2x"
+  weight = 1
+  url = "mailto:reda.tamtam@princeton.edu"
+
+[[params.social]]
+  name = "Google Scholar"
+  icon = "fa fa-graduation-cap fa-2x"
+  weight = 2
+  url = "https://scholar.google.com/citations?user=iu6CkiIAAAAJ&hl=en"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github fa-2x"
+  weight = 3
+  url = "https://github.com/redatamtam"
+
+[[params.social]]
+  name = "Bluesky"
+  icon = "fa-brands fa-bluesky fa-2x"
+  weight = 4
+  url = "https://bsky.app/profile/redatamtam.bsky.social"
+
+
+############################
+# Optional: language scaffolding (keep single-language for now)
+############################
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
