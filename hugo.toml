@@ -96,7 +96,7 @@ googleAnalytics = "G-L8RE2099K1"
   avatarURL = "images/avatar.jpg"
 
   # Site icon (favicon) — place file in static/
-  favicon = "PU_mark.jpg"
+  favicon = "PU_mark.png"
 
   ##########################
   # Dark-first look & feel
@@ -104,7 +104,8 @@ googleAnalytics = "G-L8RE2099K1"
   # Most hugo-coder installs support: "auto", "dark", "light"
   colorScheme = "dark"
   # Show the toggle in the UI (set true if you want to force dark only)
-  hideColorSchemeToggle = true
+  hideColorSchemeToggle = false
+  hideSiteTitle = true
 
   # Date formatting
   dateFormat = "January 2, 2006"
@@ -118,7 +119,7 @@ googleAnalytics = "G-L8RE2099K1"
 
   # Optional: hide theme credit line if you prefer (some academics keep it)
   hideCredits = true
-  hideCopyright = true
+  hideCopyright = false
 
   ##########################
   # Academic / content features
