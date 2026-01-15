@@ -92,7 +92,7 @@ googleAnalytics = "G-L8RE2099K1"
   description = ""
 
   # Avatar shown on homepage (place file in static/images/)
-  avatarURL = "images/avatar.jpg"
+  avatarURL = "images/avatar.JPGs"
 
   # Site icon (favicon) — place file in static/
   favicon = "PU_mark.png"
