@@ -21,14 +21,6 @@
         {{ end }}
       </div>
     {{ end }}
-
-    {{ if .Site.Menus.main }}
-      <nav class="home-nav">
-        {{ range .Site.Menus.main }}
-          <a class="home-nav-link" href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
-      </nav>
-    {{ end }}
   </aside>
 
   <main class="home-main">

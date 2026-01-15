@@ -88,9 +88,8 @@ googleAnalytics = "G-L8RE2099K1"
   # Identity / header
   ##########################
   author = "Reda Tamtam"
-  info = "PhD Student in Political Science"
-  description = "Research on authoritarian politics, political economy, and historical legacies in North Africa and the Mediterranean."
-  keywords = "political science, comparative politics, authoritarianism, Libya, political economy, text as data"
+  info = "Ph.D. Student · Department of Politics · Princeton University"
+  description = ""
 
   # Avatar shown on homepage (place file in static/images/)
   avatarURL = "images/avatar.jpg"
