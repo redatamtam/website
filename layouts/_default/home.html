@@ -2,7 +2,7 @@
 <div class="home-layout">
   <aside class="home-sidebar">
     {{ with .Site.Params.avatarURL }}
-      <img class="home-avatar" src="{{ . | relURL }}" alt="{{ $.Site.Params.author }}">
+      <img class="home-avatar" src="/images/avatar-live.jpg?v=1" alt="{{ $.Site.Params.author }}">
     {{ end }}
 
     <div class="home-name">{{ .Site.Params.author }}</div>
