@@ -21,8 +21,3 @@
 {{ if .IsHome }}{{ partial "head/hugo-generator.html" . }}{{ end }}
 
 {{ partial "head/extensions.html" . }}
-
-{{ if not hugo.IsServer }}
-  {{ template "_internal/google_analytics.html" . }}
-{{ end }}
-
