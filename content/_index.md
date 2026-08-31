@@ -4,7 +4,7 @@ title: "Home"
 
 ## Welcome │ اهلا │ Salut 
 
-I am a Second-Year Ph.D. student in Politics at Princeton University. My research lies at the intersection of authoritarian & democratic politics, immigration, and religion, with a regional focus on North Africa and the Mediterranean. I combine archival research, historical data, and computational text analysis to study how regimes construct legitimacy and manage political opposition.
+I am a Third-Year Ph.D. student in Politics at Princeton University. My research lies at the intersection of authoritarian & democratic politics, immigration, and religion, with a regional focus on North Africa and the Mediterranean. I combine archival research, historical data, and computational text analysis to study how regimes construct legitimacy and manage political opposition.
 
 ## Publications
 
@@ -20,22 +20,24 @@ We perform the first mapping of the ideological positions of European parties us
 
 ## Working Papers
 
-- **The Political Economy of Fatwas**  
-  Religious authority and economic crisis in authoritarian Egypt.
+- **Spectacular Repression, Electrification, and the Deterrence of Mobilization in Libya**
 
-- **Libyan Jews Between Empire and Revolution: Colonial Rule, Expulsion, and Authoritarian State-Building**
+- **Crisis Governance and Minority Repression: Antisemitism in the Kingdom of Libya, 1951–1969**
 
 ## Work in Progress
 
-- **The Long Shadow of April 7th: Televised Public Executions and the Consolidation of Authoritarian Rule in Libya**
-
 - **Where's the Party?**
-    (Wtih Kevin Koehler)
+    (with Kevin Koehler)
 
-- **Immigration and Electoral Politics: Evidence from the Paris 2024 Olympics**  
-  (with Mathias Poertner and Melissa Sands).
+- **The Political Economy of Fatwas: Religious Rulings and Economic Crises in Authoritarian Egypt**
+
+- **Libyan Jews Between Empire and Revolution: Italian Colonialism, Jewish Libyans, and Gaddafi's Expulsions**
+
+- **Measuring our Neighbors: The EU's Politics of Inclusion and MENA Public Opinion**
 
 ## Contact
 
 Email: [reda.tamtam@princeton.edu](mailto:reda.tamtam@princeton.edu)
+
+If you are considering applying to Ph.D. programs in political science and would like to talk about the process, feel free to reach out — I'm especially happy to hear from prospective applicants from underrepresented groups.
 
